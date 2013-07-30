@@ -1,4 +1,4 @@
-# Stasis template for front end prototyping
+# Front end static prototyping with fun
 
 ## We love Stasis and you should too \!
 
