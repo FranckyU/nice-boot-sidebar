@@ -32,3 +32,10 @@ We are focusing on developers' productivity so we use selected tools to make it 
 4. If everythings OK, you sould be able to run `stasis -d 3030` for example to generate html files
 5. The generated HTML files are on the /public directory. Open it on your browser or navigate to http://127.0.0.1:3030
 6. Follow Stasis guidelines for digging deeper at [http://stasis.me](http://stasis.me) 
+
+### In trouble ?
+
++ You can experiment some issues when bundling, make sure you have bundler installed, if not `gem install bundler`
++ If the JS runtime gem installation blocks, make sure you have the right libs to compile C extensions, if not `sudo apt-get build-essentials`
++ Another installation issues ? Stackoverflow would certainly solve 99,999% of your issues
++ Anyway feel free to contact me at andyu.kifer@gmail.com, there's a lot to share !
