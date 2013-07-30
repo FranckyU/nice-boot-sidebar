@@ -1,12 +1,12 @@
 # Stasis template for front end prototyping
 
-## We love Stasis and you should too !
+## We love Stasis and you should too \!
 
 ### About this app
 
 This is a template for those who use stasis [http://stasis.me](http://stasis.me) as a primary tool for static web app prototyping.  
-It's a great tool for getting from PSD to Rails or Sinatra (or any framework) without missing the fun of HAML, SASS and CoffeeScript.  
-Enjoy !
+It's a great tool for getting from PSD to Rails or Sinatra \(or any framework\) without missing the fun of HAML, SASS and CoffeeScript.  
+Enjoy \!
 
 ### Components
 
@@ -27,10 +27,10 @@ We are focusing on developers' productivity so we use selected tools to make it 
 ### Installation
 
 1. clone this repo
-2. make sure you have a fresh ruby 2.0.0 or + installation (We use RVM to manage our rubies, but you can use rbenv or chruby)
+2. make sure you have a fresh ruby 2.0.0 or + installation \(We use RVM to manage our rubies, but you can use rbenv or chruby\)
 3. `cd` to the project directory and execute `bundle install`
 4. If everythings OK, you sould be able to run `stasis -d 3030` for example to generate html files
-5. The generated HTML files are on the /public directory. Open it on your browser or navigate to http://127.0.0.1:3030
+5. The generated HTML files are on the /public directory. Open it on your browser or navigate to [http://127.0.0.1:3030](http://127.0.0.1:3030)
 6. Follow Stasis guidelines for digging deeper at [http://stasis.me](http://stasis.me) 
 
 ### In trouble ?
@@ -38,4 +38,4 @@ We are focusing on developers' productivity so we use selected tools to make it 
 + You can experiment some issues when bundling, make sure you have bundler installed, if not `gem install bundler`
 + If the JS runtime gem installation blocks, make sure you have the right libs to compile C extensions, if not `sudo apt-get build-essentials`
 + Another installation issues ? Stackoverflow would certainly solve 99,999% of your issues
-+ Anyway feel free to contact me at andyu.kifer@gmail.com, there's a lot to share !
++ Anyway feel free to contact me at andyu.kifer@gmail.com, there's a lot to share \!
