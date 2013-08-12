@@ -31,7 +31,11 @@ We are focusing on developers' productivity so we use selected tools to make it 
 3. `cd` to the project directory and execute `bundle install`
 4. If everythings OK, you sould be able to run `stasis -d 3030` for example to generate html files
 5. The generated HTML files are on the /public directory. Open it on your browser or navigate to [http://127.0.0.1:3030](http://127.0.0.1:3030)
-6. Follow Stasis guidelines for digging deeper at [http://stasis.me](http://stasis.me) 
+6. Follow Stasis guidelines for digging deeper at [http://stasis.me](http://stasis.me)
+
+### Updates
+
+**2013-08-12** *Moving to Bootstrap 3*
 
 ### In trouble ?
 
