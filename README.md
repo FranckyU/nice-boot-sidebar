@@ -15,6 +15,11 @@ But I find it a bit HTML5 non compliant as we already have the `<nav>` tag avail
 
 This template contains an alternative vertical navigation that address this issue, it is left positioned and fixed and it can be used for building beautiful backends.
 
+## Show us the result dude !!
+
+Yup, here's the [link to the result on JSFiddle](http://jsfiddle.net/YJB4q/)
+Better, [here you can view it full screen](http://jsfiddle.net/YJB4q/embedded/result/)
+
 ## Usage
 
 The complete template is built with [Stasis](https://stasis.me) using my base template for front-end prototyping [StasisTPL](https://github.com/FranckyU/StasisTPL.git) so you should have a valid Ruby environment to run it, I use RVM.
