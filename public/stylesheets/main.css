@@ -1,11 +1,11 @@
 body {
   background: none repeat scroll 0 0 white; }
 
-nav.sidebar-menu-collapsed {
+nav.nbs-sidebar-menu-collapsed {
   width: 44px; }
-nav.sidebar-menu-expanded {
+nav.nbs-sidebar-menu-expanded {
   width: 106px; }
-nav.sidebar {
+nav.nbs-sidebar {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -13,12 +13,12 @@ nav.sidebar {
   background: none repeat scroll 0 0 #0099ff;
   color: white;
   padding: 20px 10px; }
-  nav.sidebar a#justify-icon {
+  nav.nbs-sidebar a#justify-icon {
     outline: 0;
     color: white;
     font-size: 24px;
     font-style: normal; }
-  nav.sidebar a#logout-icon {
+  nav.nbs-sidebar a#logout-icon {
     outline: 0;
     color: white;
     font-size: 24px;
@@ -26,35 +26,35 @@ nav.sidebar {
     position: absolute;
     bottom: 10px;
     left: 10px; }
-  nav.sidebar ul {
+  nav.nbs-sidebar ul {
     margin: 0;
     padding: 0;
     margin-top: 60px; }
-    nav.sidebar ul li {
+    nav.nbs-sidebar ul li {
       margin: 0;
       padding: 0;
       margin-top: 20px;
       list-style-type: none; }
-      nav.sidebar ul li a.expandable {
+      nav.nbs-sidebar ul li a.expandable {
         outline: 0;
         color: white;
         text-decoration: none;
         font-size: 20px; }
-        nav.sidebar ul li a.expandable:hover {
+        nav.nbs-sidebar ul li a.expandable:hover {
           color: #bbbbbb; }
-        nav.sidebar ul li a.expandable span.expanded-element {
+        nav.nbs-sidebar ul li a.expandable span.expanded-element {
           margin-left: 2px;
           display: none;
           font-size: 11px;
           position: relative;
           bottom: 2px; }
-      nav.sidebar ul li.active {
+      nav.nbs-sidebar ul li.active {
         background: none repeat scroll 0 0 black;
         border-radius: 4px;
         text-align: center;
         margin-left: -4px;
         padding: 4px; }
-        nav.sidebar ul li.active a.expandable {
+        nav.nbs-sidebar ul li.active a.expandable {
           color: white !important; }
-          nav.sidebar ul li.active a.expandable:hover {
+          nav.nbs-sidebar ul li.active a.expandable:hover {
             color: white !important; }

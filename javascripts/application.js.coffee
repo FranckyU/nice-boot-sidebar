@@ -1,32 +1,37 @@
 $ ->
-  expandMyMenu = () ->
-    $("nav.sidebar").removeClass("sidebar-menu-collapsed").addClass("sidebar-menu-expanded")
+  class NBSEngine
+    expandMyMenu: () ->
+      $("nav.nbs-sidebar").removeClass("nbs-sidebar-menu-collapsed").addClass("nbs-sidebar-menu-expanded")
 
-  collapseMyMenu = () ->
-    $("nav.sidebar").removeClass("sidebar-menu-expanded").addClass("sidebar-menu-collapsed")
+    collapseMyMenu: () ->
+      $("nav.nbs-sidebar").removeClass("nbs-sidebar-menu-expanded").addClass("nbs-sidebar-menu-collapsed")
 
-  showMenuTexts = () ->
-    $("nav.sidebar ul a span.expanded-element").show()
+    showMenuTexts: () ->
+      $("nav.nbs-sidebar ul a span.expanded-element").show()
 
-  hideMenuTexts = () ->
-    $("nav.sidebar ul a span.expanded-element").hide()
+    hideMenuTexts: () ->
+      $("nav.nbs-sidebar ul a span.expanded-element").hide()
 
+    ignite: () ->
 
-  $("#justify-icon").click (e) ->
+      ((nbs_instance) ->
+        $("#justify-icon").click (e) ->
 
-    if $(this).parent("nav.sidebar").hasClass("sidebar-menu-collapsed")
-      expandMyMenu()
-      showMenuTexts()
+          if $(this).parent("nav.nbs-sidebar").hasClass("nbs-sidebar-menu-collapsed")
+            nbs_instance.expandMyMenu()
+            nbs_instance.showMenuTexts()
 
-      $(this).css({color: "#000"})
+            $(this).css({color: "#000"})
 
-    else if $(this).parent("nav.sidebar").hasClass("sidebar-menu-expanded")
-      collapseMyMenu()
-      hideMenuTexts()
+          else if $(this).parent("nav.nbs-sidebar").hasClass("nbs-sidebar-menu-expanded")
+            nbs_instance.collapseMyMenu()
+            nbs_instance.hideMenuTexts()
 
-      $(this).css({color: "#FFF"})
+            $(this).css({color: "#FFF"})
 
-    false
+          false
+      )(this)
 
+  (new NBSEngine).ignite()
   
   
