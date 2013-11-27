@@ -1,2 +1,89 @@
+$sidebar-normal-bg-color: #0099FF
+$sidebar-normal-text-color: #FFFFFF
+$sidebar-hovered-text-color: #BBB
+
+$sidebar-active-item-color: #FFF
+$sidebar-active-item-bg: #000
+
+$sidebar-expanded-width: 106px
+$sidebar-collapsed-width: 50px
+
 body
   background: none repeat scroll 0 0 #FFF
+
+nav
+  &.sidebar-menu-collapsed
+    width: $sidebar-collapsed-width
+
+  &.sidebar-menu-expanded
+    width: $sidebar-expanded-width
+
+  &.sidebar
+    position: fixed
+    top: 0px
+    left: 0px
+    height: 100%
+    background: none repeat scroll 0 0 $sidebar-normal-bg-color
+    color: $sidebar-normal-text-color
+
+    padding: 20px 10px
+
+    a#justify-icon
+      outline: 0
+      color: $sidebar-normal-text-color
+      font:
+        size: 24px
+        style: normal
+
+    a#logout-icon
+      outline: 0
+      color: $sidebar-normal-text-color
+      font:
+        size: 24px
+        style: normal
+      position: absolute
+      bottom: 10px
+      left: 10px
+
+    ul
+      margin: 0
+      padding: 0
+      margin-top: 60px
+
+      li
+        margin: 0
+        padding: 0
+        margin-top: 20px
+        list-style-type: none
+
+        a.expandable
+          outline: 0
+          color: $sidebar-normal-text-color
+          text-decoration: none
+          font:
+            size: 20px
+
+          &:hover
+            color: $sidebar-hovered-text-color
+
+          span.expanded-element
+            margin-left: 2px
+            display: none
+            font:
+              size: 11px
+            position: relative
+            bottom: 2px
+
+        &.active
+          background: none repeat scroll 0 0 $sidebar-active-item-bg
+          border-radius: 4px
+          text-align: center
+          margin-left: -4px
+          padding: 4px
+
+          a.expandable
+            color: $sidebar-active-item-color !important
+
+            &:hover
+              color: $sidebar-normal-text-color !important
+          

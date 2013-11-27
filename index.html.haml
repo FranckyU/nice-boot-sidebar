@@ -1,5 +1,28 @@
-%h1 Hello stasiser
+%nav.sidebar.sidebar-menu-collapsed
+  %a#justify-icon{href:"#"}
+    %span.glyphicon.glyphicon-align-justify
 
-%h1 Lol
+  %ul
+    %li.active
+      %a.expandable{href:"#", title:"Dashboard"}
+        %span.glyphicon.glyphicon-home.collapsed-element
+        %span.expanded-element Dashboard
 
-%a{href: "#", id:"lnk"} click me
+    %li
+      %a.expandable{href:"#", title:"APIs"}
+        %span.glyphicon.glyphicon-wrench.collapsed-element
+        %span.expanded-element APIs
+
+    %li
+      %a.expandable{href:"#", title:"Settings"}
+        %span.glyphicon.glyphicon-cog.collapsed-element
+        %span.expanded-element Settings
+
+    %li
+      %a.expandable{href:"#", title:"Account"}
+        %span.glyphicon.glyphicon-user.collapsed-element
+        %span.expanded-element Account
+
+  %a#logout-icon{href:"#", title:"Logout"}
+    %span.glyphicon.glyphicon-off
+

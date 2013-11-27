@@ -1,24 +1,33 @@
 (function() {
   $(function() {
-    var changeTextOf, rounds;
-    rounds = 0;
-    changeTextOf = function(e, index) {
-      var prefix;
-      prefix = (rounds + index + 1).toString().match(/.*1$/) ? "st" : (rounds + index + 1).toString().match(/.*2$/) ? "nd" : "th";
-      e.html("Have a good time for the " + (rounds + index + 1) + prefix + " time !");
-      if (index % 2 === 1) {
-        return rounds += 1;
-      }
+    var collapseMyMenu, expandMyMenu, hideMenuTexts, showMenuTexts;
+    expandMyMenu = function() {
+      return $("nav.sidebar").removeClass("sidebar-menu-collapsed").addClass("sidebar-menu-expanded");
     };
-    return $("#lnk").click(function(e) {
-      var elem, index, _i, _len, _ref, _results;
-      _ref = $("h1");
-      _results = [];
-      for (index = _i = 0, _len = _ref.length; _i < _len; index = ++_i) {
-        elem = _ref[index];
-        _results.push(changeTextOf($(elem), index));
+    collapseMyMenu = function() {
+      return $("nav.sidebar").removeClass("sidebar-menu-expanded").addClass("sidebar-menu-collapsed");
+    };
+    showMenuTexts = function() {
+      return $("nav.sidebar ul a span.expanded-element").show();
+    };
+    hideMenuTexts = function() {
+      return $("nav.sidebar ul a span.expanded-element").hide();
+    };
+    return $("#justify-icon").click(function(e) {
+      if ($(this).parent("nav.sidebar").hasClass("sidebar-menu-collapsed")) {
+        expandMyMenu();
+        showMenuTexts();
+        $(this).css({
+          color: "#000"
+        });
+      } else if ($(this).parent("nav.sidebar").hasClass("sidebar-menu-expanded")) {
+        collapseMyMenu();
+        hideMenuTexts();
+        $(this).css({
+          color: "#FFF"
+        });
       }
-      return _results;
+      return false;
     });
   });
 

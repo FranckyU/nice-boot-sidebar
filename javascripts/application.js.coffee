@@ -1,21 +1,32 @@
 $ ->
-  # happy coffee time !
+  expandMyMenu = () ->
+    $("nav.sidebar").removeClass("sidebar-menu-collapsed").addClass("sidebar-menu-expanded")
 
-  rounds = 0
+  collapseMyMenu = () ->
+    $("nav.sidebar").removeClass("sidebar-menu-expanded").addClass("sidebar-menu-collapsed")
 
-  changeTextOf = (e, index) ->
+  showMenuTexts = () ->
+    $("nav.sidebar ul a span.expanded-element").show()
 
-    prefix =  if (rounds+index+1).toString().match(/.*1$/)
-                "st"
-              else if (rounds+index+1).toString().match(/.*2$/)
-                "nd"
-              else
-                "th"
+  hideMenuTexts = () ->
+    $("nav.sidebar ul a span.expanded-element").hide()
 
-    e.html("Have a good time for the " + (rounds+index+1) + prefix + " time !")
-    
-    rounds += 1 if index%2 is 1  
 
-  $("#lnk").click (e) ->
-    changeTextOf $(elem), index for elem, index in $("h1")
+  $("#justify-icon").click (e) ->
+
+    if $(this).parent("nav.sidebar").hasClass("sidebar-menu-collapsed")
+      expandMyMenu()
+      showMenuTexts()
+
+      $(this).css({color: "#000"})
+
+    else if $(this).parent("nav.sidebar").hasClass("sidebar-menu-expanded")
+      collapseMyMenu()
+      hideMenuTexts()
+
+      $(this).css({color: "#FFF"})
+
+    false
+
+  
   
