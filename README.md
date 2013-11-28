@@ -17,8 +17,8 @@ This template contains an alternative vertical navigation that address this issu
 
 ## Show us the result dude !!
 
-Yup, here's the [link to the result on JSFiddle](http://jsfiddle.net/YJB4q/)
-Better, [here you can view it full screen](http://jsfiddle.net/YJB4q/embedded/result/)
+Yup, here's the [link to the result on JSFiddle](http://jsfiddle.net/YJB4q/6/)
+Better, [here you can view it full screen](http://jsfiddle.net/YJB4q/6/embedded/result/)
 
 ## Usage
 
