@@ -4,7 +4,7 @@ body {
 nav.nbs-sidebar-menu-collapsed {
   width: 44px; }
 nav.nbs-sidebar-menu-expanded {
-  width: 106px; }
+  width: auto; }
 nav.nbs-sidebar {
   position: fixed;
   top: 0px;
