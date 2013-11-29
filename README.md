@@ -45,6 +45,9 @@ For non Ruby-Stasis users, just copy the compiled HTML structure in `index.html`
 ---
 
 ## Changelog
+*2013-11-29*
+- Adding submenu that displays on expand for active item
+- Local Test OK on FF25
 
 *2013-11-28*
 - Made the width auto when expanded
