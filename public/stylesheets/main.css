@@ -26,35 +26,59 @@ nav.nbs-sidebar {
     position: absolute;
     bottom: 10px;
     left: 10px; }
-  nav.nbs-sidebar ul {
+  nav.nbs-sidebar ul.nbs-level1 {
     margin: 0;
     padding: 0;
     margin-top: 60px; }
-    nav.nbs-sidebar ul li {
+    nav.nbs-sidebar ul.nbs-level1 li {
       margin: 0;
       padding: 0;
       margin-top: 20px;
       list-style-type: none; }
-      nav.nbs-sidebar ul li a.expandable {
+      nav.nbs-sidebar ul.nbs-level1 li a.expandable {
         outline: 0;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 30px;
         color: white;
         text-decoration: none;
+        text-align: left;
+        padding: 4px 4px 4px 0px;
         font-size: 20px; }
-        nav.nbs-sidebar ul li a.expandable:hover {
+        nav.nbs-sidebar ul.nbs-level1 li a.expandable:hover {
           color: #bbbbbb; }
-        nav.nbs-sidebar ul li a.expandable span.expanded-element {
-          margin-left: 2px;
+        nav.nbs-sidebar ul.nbs-level1 li a.expandable span.expanded-element {
           display: none;
           font-size: 11px;
           position: relative;
-          bottom: 2px; }
-      nav.nbs-sidebar ul li.active {
-        background: none repeat scroll 0 0 black;
-        border-radius: 4px;
-        text-align: center;
-        margin-left: -4px;
-        padding: 4px; }
-        nav.nbs-sidebar ul li.active a.expandable {
-          color: white !important; }
-          nav.nbs-sidebar ul li.active a.expandable:hover {
+          bottom: 5px; }
+      nav.nbs-sidebar ul.nbs-level1 li.active {
+        margin-left: -4px; }
+        nav.nbs-sidebar ul.nbs-level1 li.active a.expandable {
+          background: none repeat scroll 0 0 black;
+          border-radius: 4px;
+          color: white !important;
+          width: 30px;
+          padding: 4px; }
+          nav.nbs-sidebar ul.nbs-level1 li.active a.expandable:hover {
             color: white !important; }
+    nav.nbs-sidebar ul.nbs-level1 ul.nbs-level2 {
+      margin: 20px 6px 20px 30px;
+      padding: 0;
+      display: none; }
+      nav.nbs-sidebar ul.nbs-level1 ul.nbs-level2 li {
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        list-style-type: none;
+        border-bottom: solid white 1px; }
+        nav.nbs-sidebar ul.nbs-level1 ul.nbs-level2 li:last-child {
+          border-bottom: none; }
+        nav.nbs-sidebar ul.nbs-level1 ul.nbs-level2 li a {
+          text-decoration: none;
+          outline: 0;
+          color: white;
+          text-decoration: none;
+          font-size: 11px; }

@@ -2,11 +2,21 @@
   %a#justify-icon{href:"#"}
     %span.glyphicon.glyphicon-align-justify
 
-  %ul
+  %ul.nbs-level1
     %li.active
       %a.expandable{href:"#", title:"Dashboard"}
         %span.glyphicon.glyphicon-home.collapsed-element
         %span.expanded-element Dashboard
+
+      %ul.nbs-level2
+        %li
+          %a{href:"#", title:"Traffic"} Traffic
+
+        %li
+          %a{href:"#", title:"Conversion rate"} Conversion rate
+
+        %li
+          %a{href:"#", title:"Purchases"} Purchases
 
     %li
       %a.expandable{href:"#", title:"APIs"}
