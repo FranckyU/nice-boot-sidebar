@@ -40,3 +40,12 @@ stasis -d 3000
 ```
 
 For non Ruby-Stasis users, just copy the compiled HTML structure in `index.html` along with JS, CSS and image files from `/public` folder into your project and that should be OK.
+
+---
+
+## Changelog
+
+*2013-11-28*
+- Made the width auto when expanded
+- Adding CSS classes prefix
+- Encapsulated NBS JS code within a class
