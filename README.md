@@ -17,8 +17,8 @@ This template contains an alternative vertical navigation that address this issu
 
 ## Show us the result dude !!
 
-Yup, here's the [link to the result on JSFiddle](http://jsfiddle.net/YJB4q/6/)
-Better, [here you can view it full screen](http://jsfiddle.net/YJB4q/6/embedded/result/)
+Yup, here's the [link to the result on JSFiddle](http://jsfiddle.net/YJB4q/7/)
+Better, [here you can view it full screen](http://jsfiddle.net/YJB4q/7/embedded/result/)
 
 ## Usage
 
@@ -53,3 +53,6 @@ For non Ruby-Stasis users, just copy the compiled HTML structure in `index.html`
 - Made the width auto when expanded
 - Adding CSS classes prefix
 - Encapsulated NBS JS code within a class
+
+## TODO
+- Fix padding gap on expand/collapse
